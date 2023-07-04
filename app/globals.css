@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  background-color: black;
+  height: 100%;
+}
+
+@layer components {
+  .scrollnavbar {
+    @apply bg-black/30 backdrop-blur-sm;
+  }
+}
+
+.gradient {
+  background: linear-gradient(transparent 0%, #000000 30%);
+}
+
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+/* Cars */
+.model-s-section {
+  background-image: url('/images/T-Model-S.avif');
+}
+
+.model-3-section {
+  background-image: url('/images/T-Model-3.avif');
+}
+
+.model-x-section {
+  background-image: url('/images/T-Model-X.avif');
+}
+
+.model-y-section {
+  background-image: url('/images/T-Model-Y.avif');
+}
+
+.header-models-detail {
+  background-image: url('/details/model-s/Model-S-Main.jpg');
+}
+
+.interior-detail {
+  background-image: url('/details/model-s/Model-S-Interior.jpg');
+}
+
+.exterior-detail {
+  background-image: url('/details/model-s/Model-S-Exterior-Hero.jpg');
+}
+
+.autopilot-detail {
+  background-image: url('/details/model-s/Autopilot-Hero-Vision.jpg');
+}
+
+.safety-models-detail {
+  background-image: url('/details/model-s/Model-S-Safety-Hero.jpg');
+}
+
+.specs-detail {
+  background-image: url('/images/ModelS.png');
+}
+
+/* Model 3 */
+.header-model3-detail {
+  background-image: url('/details/model-3/Model-3-Main-Hero.jpg');
+}
+
+.safety-model3-detail {
+  background-image: url('/details/model-3/Model-3-Safety-Hero.png');
+}
+
+.range-model3-detail {
+  background-image: url('/details/model-3/Model-3-Range-Hero.jpg');
+}
+
+.interior-model3-detail {
+  background-image: url('/details/model-3/Model-3-Interior.jpg');
+}
+
+.acceleration-model3-detail {
+  background-image: url('/details/model-3/Model-3-Performance.jpg');
+}
+
+.wheels-model3-detail {
+  background-image: url('/details/model-3/Model-3-AWD.jpg');
+}
+
+.autopilot-model3-detail {
+  background-image: url('/details/model-3/Model-3-Autopilot.jpg');
+}
+
+/* Model X */
+.header-modelx-detail {
+  background-image: url('/details/model-x/Model-X-Main-Hero.avif');
+}
+
+.exterior-modelx-detail {
+  background-image: url('/details/model-x/Model-X-Exterior-Hero.jpg');
+}
+
+.safety-modelx-detail {
+  background-image: url('/details/model-x/Model-X-Safety-Hero.jpg');
+}
+
+.specs-modelx-detail {
+  background-image: url('/images/ModelX.png');
+}
+
+/* Model Y */
+.header-modely-detail {
+  background-image: url('/details/model-y/Model-Y-Main-Hero.avif');
+}
+
+.wheel-modely-detail {
+  background-image: url('/details/model-y/Wheel-Drive-Model-Y.avif');
+}
+
+.interior-modely-detail {
+  background-image: url('/details/model-y/Model-Y-Interior-Hero.avif');
+}
+
+.specs-modely-detail {
+  background-image: url('/images/ModelY.png');
+}
+
+@media screen and (min-width: 749px) and (max-width: 1024px) {
+  .model-s-section {
+    background-image: url('/images/ModelS.png');
+  }
+
+  .model-3-section {
+    background-image: url('/images/Model3.png');
+  }
+
+  .model-x-section {
+    background-image: url('/images/ModelX.png');
+  }
+
+  .model-y-section {
+    background-image: url('/images/ModelY.png');
+  }
+}
+
+@media screen and (max-width: 649px) {
+  /* Model S */
+  .header-models-detail {
+    background-image: url('/details/model-s/Model-S-Main-Mobile.png');
+  }
+
+  /* Model 3 */
+  .header-model3-detail {
+    background-image: url('/details/model-3/Model-3-Main-Mobile.png');
+  }
+
+  /* Model X */
+  .header-modelx-detail {
+    background-image: url('/details/model-x/Model-X-Main-Mobile.avif');
+  }
+
+  /* Model Y */
+  .header-modely-detail {
+    background-image: url('/details/model-y/Model-Y-Main-Mobile.avif');
+  }
+
+  .interior-modely-detail {
+    background-image: url('/details/model-y/Model-Y-Interior-Hero-Mobile.avif');
+  }
+}
